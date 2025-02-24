@@ -17,10 +17,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.svg" alt="ShivLinkAI Logo" className="h-10 w-10 rounded-full" />
-              <span className="text-xl font-bold text-gray-900 dark:text-white">ShivLinkAI</span>
-            </Link>
+          <Link to="/" className="flex items-center space-x-2">
+          <img
+            src="https://media-hosting.imagekit.io//d6c9d05c225f4a49/logo.svg?Expires=1834988071&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IvS1EXgbWp6wdCZ59852w-aHbxphDvh9wu3vG~8Z1g~mCj5Nzc6sgAVDiuKbQYlH0od8AEwfxY2NMCcQRPb5lgX6RqoYihlX71BNjb~1~UoUmWgQiA9axfo-DdhemkABvojH8d6~WcY6~k-dhL7P3u52WzUvKaYN4qMJTVO7qB7PMs~uXdpvQZv7DJGZjeykP7tn-w6BOBuGCIt25mus~utdjT7I9ATFxVazJeiwcXq8TqPPjIvQpSt-w63d0kmKLzJBIrUfSxmgP38FO0ZD6HYM1kdLYrEfGrKWs7xCp10Q9mUc6AIRlvvDpuCMVeJZt9~8z-SNoPYaa3d1QQh8aQ__"
+            alt="ShivLinkAI Logo"
+            className="h-10 w-10 rounded-full"
+          /> 
+          <span className="text-xl font-bold text-gray-900 dark:text-white">ShivLinkAI</span>
+        </Link>
           </div>
 
           <div className="hidden md:block">
