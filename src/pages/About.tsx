@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Award, Users, Link } from 'lucide-react';
+import { Shield, Award, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -113,16 +114,15 @@ const About = () => {
           <p className="text-lg text-blue-100 mb-6">
             Let us help you find the perfect plan for your home or business.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-          >
-            <Link 
-            to="/contact">
-            Contact Us Today
-            </Link>
-          </motion.button>
+          <Link to="/contact">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+            >
+              Contact Us Today
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </div>
