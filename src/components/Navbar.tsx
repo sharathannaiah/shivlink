@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Wifi } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/src/assets/PHOTO-2024-12-19-23-45-52.jpg" alt="ShivLinkAI Logo" className="h-10 w-10 rounded-full" />
+              <img src="/src/assets/logo.svg" alt="ShivLinkAI Logo" className="h-10 w-10 rounded-full" />
               <span className="text-xl font-bold text-gray-900 dark:text-white">ShivLinkAI</span>
             </Link>
           </div>
