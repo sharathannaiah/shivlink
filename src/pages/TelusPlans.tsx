@@ -4,33 +4,33 @@ import PlanCard from '../components/PlanCard';
 
 const mobilePlans = [
   {
-    name: "Peace of Mind 5G",
-    price: 80,
+    name: "Essential",
+    price: 35,
     features: [
-      { name: "30GB 5G Data", included: true },
+      { name: "30GB Data", included: true },
+      { name: "Unlimited Canada-wide Calling", included: true },
+      { name: "Unlimited International Calling", included: true },
+      { name: "Unlimited Texting", included: true },
+      { name: "International Roaming", included: false },
+      { name: "Canada-US Roaming", included: false },
+    ],
+  },
+  {
+    name: "Premium Canada-Wide 5G",
+    price: 50,
+    features: [
+      { name: "60 GB Data", included: true },
       { name: "Unlimited Canada-wide Calling", included: true },
       { name: "Unlimited International Texting", included: true },
       { name: "5G Network Access", included: true },
       { name: "Canada/US Coverage", included: false },
-      { name: "Stream+ Entertainment Package", included: false },
-    ],
-  },
-  {
-    name: "Peace of Mind Connect 5G+",
-    price: 100,
-    features: [
-      { name: "Unlimited 5G+ Data", included: true },
-      { name: "Unlimited Canada-wide Calling", included: true },
-      { name: "Unlimited International Texting", included: true },
-      { name: "5G+ Network Access", included: true },
-      { name: "Canada/US Coverage", included: true },
-      { name: "Stream+ Entertainment Package", included: true },
+      { name: "International Roaming", included: false },
     ],
     popular: true,
   },
   {
-    name: "Ultimate 5G+",
-    price: 120,
+    name: "Premium Can-US 5G+",
+    price: 60,
     features: [
       { name: "Unlimited 5G+ Data", included: true },
       { name: "Unlimited Canada/US Calling", included: true },
@@ -42,8 +42,8 @@ const mobilePlans = [
     popular: true,
   },
   {
-    name: "Elite 5G+",
-    price: 140,
+    name: "Premium Can-US-MEX 5G+",
+    price: 65,
     features: [
       { name: "Unlimited 5G+ Data", included: true },
       { name: "Unlimited Global Calling", included: true },
@@ -58,10 +58,9 @@ const mobilePlans = [
 const internetPlans = [
   {
     name: "PureFibre 500",
-    price: 95,
+    price: 65,
     features: [
       { name: "500 Mbps Download", included: true },
-      { name: "500 Mbps Upload", included: true },
       { name: "Unlimited Usage", included: true },
       { name: "Wi-Fi 6 Router", included: true },
       { name: "Static IP", included: false },
@@ -70,10 +69,9 @@ const internetPlans = [
   },
   {
     name: "PureFibre Gigabit",
-    price: 125,
+    price: 75,
     features: [
       { name: "1.5 Gbps Download", included: true },
-      { name: "940 Mbps Upload", included: true },
       { name: "Unlimited Usage", included: true },
       { name: "Wi-Fi 6 Router", included: true },
       { name: "Static IP", included: true },
@@ -83,28 +81,15 @@ const internetPlans = [
   },
   {
     name: "PureFibre Ultra",
-    price: 145,
+    price: 80,
     features: [
       { name: "2 Gbps Download", included: true },
-      { name: "1 Gbps Upload", included: true },
       { name: "Unlimited Usage", included: true },
       { name: "Wi-Fi 6 Router", included: true },
       { name: "Static IP", included: true },
       { name: "TELUS Boost Wi-Fi", included: true },
     ],
     popular: true,
-  },
-  {
-    name: "PureFibre 1.5G",
-    price: 145,
-    features: [
-      { name: "1.5 Gbps Download", included: true },
-      { name: "1 Gbps Upload", included: true },
-      { name: "Unlimited Usage", included: true },
-      { name: "Wi-Fi 6 Router", included: true },
-      { name: "Static IP", included: true },
-      { name: "TELUS Boost Wi-Fi", included: true },
-    ],
   },
 ];
 
@@ -150,8 +135,12 @@ const securityPlans = [
 ];
 
 const TelusPlans = () => {
-  const handleGetStarted = () => {
-    window.location.href = '/contact'; // Navigate to contact us page
+  const handleGetStarted = (type: string) => {
+    if (type === 'mobile') {
+      window.location.href = 'https://forms.gle/sMkSowyVWi6HJoEy8';
+    } else {
+      window.location.href = 'https://forms.gle/nanVuJFnvjm3odVF6';
+    }
   };
 
   return (
@@ -184,7 +173,7 @@ const TelusPlans = () => {
                   type="mobile"
                   provider="telus"
                   {...plan}
-                  onClick={handleGetStarted}
+                  onClick={() => handleGetStarted('mobile')}
                 />
               </div>
             ))}
@@ -204,7 +193,7 @@ const TelusPlans = () => {
                   type="internet"
                   provider="telus"
                   {...plan}
-                  onClick={handleGetStarted}
+                  onClick={() => handleGetStarted('internet')}
                 />
               </div>
             ))}
@@ -224,7 +213,7 @@ const TelusPlans = () => {
                   type="security"
                   provider="telus"
                   {...plan}
-                  onClick={handleGetStarted}
+                  onClick={() => handleGetStarted('security')}
                 />
               </div>
             ))}

@@ -144,8 +144,12 @@ const securityPlans = [
 ];
 
 const RogersPlans = () => {
-  const handleGetStarted = () => {
-    window.location.href = 'https://www.rogers.com'; // Navigate to Rogers website
+  const handleGetStarted = (type: string) => {
+    if (type === 'mobile') {
+      window.location.href = 'https://forms.gle/U48rWf3QR4abcw6E9';
+    } else if (type === 'internet') {
+      window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfVXYpx-0VlFSuoCGBPW6u59JFnn_0r_Jw9zrFGP5UoO-rrrw/viewform';
+    }
   };
 
   return (
@@ -178,7 +182,7 @@ const RogersPlans = () => {
                   type="mobile"
                   provider="rogers"
                   {...plan}
-                  onClick={handleGetStarted}
+                  onClick={() => handleGetStarted('mobile')}
                 />
               </div>
             ))}
@@ -198,27 +202,7 @@ const RogersPlans = () => {
                   type="internet"
                   provider="rogers"
                   {...plan}
-                  onClick={handleGetStarted}
-                />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Security Plans */}
-        <section className="mb-20">
-          <div className="flex items-center justify-center mb-8">
-            <Shield className="h-8 w-8 text-red-600 mr-3" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Security Plans</h2>
-          </div>
-          <div className="offer-container justify-center">
-            {securityPlans.map((plan, index) => (
-              <div className="offer-card fade-in-up" key={index}>
-                <PlanCard
-                  type="security"
-                  provider="rogers"
-                  {...plan}
-                  onClick={handleGetStarted}
+                  onClick={() => handleGetStarted('internet')}
                 />
               </div>
             ))}
