@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
           <img
-            src="https://media-hosting.imagekit.io//d6c9d05c225f4a49/logo.svg?Expires=1834988071&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IvS1EXgbWp6wdCZ59852w-aHbxphDvh9wu3vG~8Z1g~mCj5Nzc6sgAVDiuKbQYlH0od8AEwfxY2NMCcQRPb5lgX6RqoYihlX71BNjb~1~UoUmWgQiA9axfo-DdhemkABvojH8d6~WcY6~k-dhL7P3u52WzUvKaYN4qMJTVO7qB7PMs~uXdpvQZv7DJGZjeykP7tn-w6BOBuGCIt25mus~utdjT7I9ATFxVazJeiwcXq8TqPPjIvQpSt-w63d0kmKLzJBIrUfSxmgP38FO0ZD6HYM1kdLYrEfGrKWs7xCp10Q9mUc6AIRlvvDpuCMVeJZt9~8z-SNoPYaa3d1QQh8aQ__"
+            src="https://media-hosting.imagekit.io//fab3930a78de4dee/PHOTO-2024-12-19-23-45-52.jpg?Expires=1834988800&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Ay~ydkiZsg15a5GqUnfgBv8rVGs2iaS9VqQvarELQo3W3WEDGXFHOeR1a-GMH8LcuW3I0dQdSOQmMM1K36g5AWHB0hCkna7KN8s7obwJYduAXWaWSreDUMxGGen99yeoxQH8fe0RAntN8T4r1omeYVmwqcsQHN4x9STFJRABqLEIx1Cf~rGvMsStiJkz0y-jFPSdhCThTa0vR50UnfGnv4sMyMnhtFHJWuA2l18xIWNKkDl0t0bVaRj2364s6z8vRQS7Zw1T48ZToTBv7ak0KuWJB-rowRYLlMvBDbWJEPwbbmmQDljIL5TpYNVaIVkLlgvvbp54Er5P2xkcMFL8Fg__"
             alt="ShivLinkAI Logo"
             className="h-10 w-10 rounded-full"
           /> 
