@@ -197,7 +197,7 @@ const Contact = () => {
                       <a href="https://wa.me/17784444411" className="hover:underline">+1 778-444-4411 (WhatsApp)</a><br />
                       <a href="mailto:contact@shivlinkai.com" className="hover:underline">Email: contact@shivlinkai.com</a><br />
                       <a href="mailto:support@shivlinkai.com" className="hover:underline">Support: support@shivlinkai.com</a><br />
-                      <a href="mailto:contact@shivlinkai.com" className="hover:underline">Apply jobs: contact@shivlinkai.com</a><br />
+                      <a href="mailto:info@shivlinkai.com" className="hover:underline">Apply jobs: info@shivlinkai.com</a><br />
                       <a href="https://www.instagram.com/shivlink_solutions/" className="hover:underline"><Instagram className="inline h-5 w-5" /> Instagram</a><br />
                       <a href="https://www.facebook.com/p/ShivLink-Solutions-61573008633113/" className="hover:underline"><Facebook className="inline h-5 w-5" /> Facebook</a>
                     </p>
@@ -210,7 +210,7 @@ const Contact = () => {
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white">Address</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       <a href="https://www.google.com/maps/place/9987+Whalley+Blvd,+Surrey,+BC" className="hover:underline">
-                        9987 Whalley Blvd<br />
+                        9887 Whalley Blvd<br />
                         Surrey, BC<br />
                         Canada
                       </a>

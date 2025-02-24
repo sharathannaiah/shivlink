@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Award, Users } from 'lucide-react';
+import { Shield, Award, Users, Link } from 'lucide-react';
 
 const About = () => {
   return (
@@ -116,10 +116,12 @@ const About = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.location.href = '/contact'}
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
           >
+            <Link 
+            to="/contact">
             Contact Us Today
+            </Link>
           </motion.button>
         </motion.div>
       </div>
