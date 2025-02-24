@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/public/images/logo.svg" alt="ShivLinkAI Logo" className="h-10 w-10 rounded-full" />
+              <img src="/images/logo.svg" alt="ShivLinkAI Logo" className="h-10 w-10 rounded-full" />
               <span className="text-xl font-bold text-gray-900 dark:text-white">ShivLinkAI</span>
             </Link>
           </div>
