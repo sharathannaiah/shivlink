@@ -1,6 +1,6 @@
-
 import { motion } from 'framer-motion';
 import { Shield, Smartphone, Wifi } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -33,14 +33,12 @@ const Hero = () => {
             >
               Explore Plans
             </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
             >
               Contact Us
-            </motion.a>
+            </Link>
           </div>
         </motion.div>
 
