@@ -23,10 +23,10 @@ function App() {
                 <Contact />
               </>
             } />
-            <Route path="/rogers" element={<RogersPlans />} />
-            <Route path="/telus" element={<TelusPlans />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/rogers-plans" element={<RogersPlans />} />
+            <Route path="/telus-plans" element={<TelusPlans />} />
+            <Route path="/about-us" element={<About />} />
+            <Route path="/contact-us" element={<Contact />} />
           </Routes>
         </div>
         <Footer />

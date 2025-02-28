@@ -29,10 +29,10 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link to="/rogers" className="nav-link">Rogers Plans</Link>
-              <Link to="/telus" className="nav-link">Telus Plans</Link>
-              <Link to="/about" className="nav-link">About</Link>
-              <Link to="/contact" className="nav-link">Contact</Link>
+              <Link to="/rogers-plans" className="nav-link">Rogers Plans</Link>
+              <Link to="/telus-plans" className="nav-link">Telus Plans</Link>
+              <Link to="/about-us" className="nav-link">About Us</Link>
+              <Link to="/contact-us" className="nav-link">Contact Us</Link>
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -62,10 +62,10 @@ const Navbar = () => {
           className="md:hidden"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900">
-            <Link to="/rogers" className="mobile-nav-link">Rogers Plans</Link>
-            <Link to="/telus" className="mobile-nav-link">Telus Plans</Link>
-            <Link to="/about" className="mobile-nav-link">About</Link>
-            <Link to="/contact" className="mobile-nav-link">Contact</Link>
+            <Link to="/rogers-plans" className="mobile-nav-link">Rogers Plans</Link>
+            <Link to="/telus-plans" className="mobile-nav-link">Telus Plans</Link>
+            <Link to="/about-us" className="mobile-nav-link">About Us</Link>
+            <Link to="/contact-us" className="mobile-nav-link">Contact Us</Link>
           </div>
         </motion.div>
       )}

@@ -67,7 +67,7 @@ const About = () => {
               Trusted Partner
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Authorized dealer for Rogers and Telus, providing genuine products and services with full warranty coverage.
+              Authorized resell dealer for Rogers and Telus, providing genuine products and services with full warranty coverage.
             </p>
           </motion.div>
 
