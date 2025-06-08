@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
-import logo from '../../logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ const Navbar = () => {
           <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
           <img
-            src={logo}
+            src="/shivlink-logo.png"
             alt="ShivLinkAI Logo"
             className="h-10 w-10 rounded-full"
           /> 
