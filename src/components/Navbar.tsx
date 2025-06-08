@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../../logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
           <img
-            src="https://media-hosting.imagekit.io//fab3930a78de4dee/PHOTO-2024-12-19-23-45-52.jpg?Expires=1834988800&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Ay~ydkiZsg15a5GqUnfgBv8rVGs2iaS9VqQvarELQo3W3WEDGXFHOeR1a-GMH8LcuW3I0dQdSOQmMM1K36g5AWHB0hCkna7KN8s7obwJYduAXWaWSreDUMxGGen99yeoxQH8fe0RAntN8T4r1omeYVmwqcsQHN4x9STFJRABqLEIx1Cf~rGvMsStiJkz0y-jFPSdhCThTa0vR50UnfGnv4sMyMnhtFHJWuA2l18xIWNKkDl0t0bVaRj2364s6z8vRQS7Zw1T48ZToTBv7ak0KuWJB-rowRYLlMvBDbWJEPwbbmmQDljIL5TpYNVaIVkLlgvvbp54Er5P2xkcMFL8Fg__"
+            src={logo}
             alt="ShivLinkAI Logo"
             className="h-10 w-10 rounded-full"
           /> 
