@@ -195,9 +195,9 @@ const Contact = () => {
                       <a href="tel:+18669691862" className="hover:underline">+1 866.969.1862</a><br />
                       <a href="tel:+18449007448" className="hover:underline">+1 844-900-SHIV</a><br />
                       <a href="https://wa.me/17784444411" className="hover:underline">+1 778-444-4411 (WhatsApp)</a><br />
-                      <a href="mailto:contact@shivlinkai.com" className="hover:underline">Email: contact@shivlinkai.com</a><br />
-                      <a href="mailto:support@shivlinkai.com" className="hover:underline">Support: support@shivlinkai.com</a><br />
-                      <a href="mailto:info@shivlinkai.com" className="hover:underline">Apply jobs: info@shivlinkai.com</a><br />
+                      <a href="mailto:infoshivlink@gmail.com" className="hover:underline">Email: infoshivlink@gmail.com</a><br />
+                      <a href="mailto:hrshivlink@gmail.com" className="hover:underline">Apply jobs: hrshivlink@gmail.com</a><br />
+                      <a href="mailto:sales.shivlink@gmail.com" className="hover:underline">Sales: sales.shivlink@gmail.com</a><br />
                       <a href="https://www.instagram.com/shivlink_solutions/" className="hover:underline"><Instagram className="inline h-5 w-5" /> Instagram</a><br />
                       <a href="https://www.facebook.com/p/ShivLink-Solutions-61573008633113/" className="hover:underline"><Facebook className="inline h-5 w-5" /> Facebook</a>
                     </p>
@@ -209,9 +209,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white">Address</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      <a href="https://www.google.com/maps/place/9987+Whalley+Blvd,+Surrey,+BC" className="hover:underline">
-                        9887 Whalley Blvd<br />
-                        Surrey, BC<br />
+                      <a href="https://www.google.com/maps/place/6350+120+St,+Surrey,+BC" className="hover:underline">
+                        #119-6350 120st<br />
+                        Surrey, BC V3X 3K1<br />
                         Canada
                       </a>
                     </p>
@@ -239,7 +239,7 @@ const Contact = () => {
               <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                 <iframe
                   title="Office Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.123456789012!2d-123.1234567!3d49.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2s9987+Whalley+Blvd%2C+Surrey%2C+BC!5e0!3m2!1sen!2sca!4v1625097721921!5m2!1sen!2sca"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.8!2d-122.8475!3d49.1184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d90b0c3e3a73%3A0x1e8c8e5e5e5e5e5e!2s6350%20120%20St%2C%20Surrey%2C%20BC%20V3X%203K1!5e0!3m2!1sen!2sca!4v1625097721921!5m2!1sen!2sca"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
