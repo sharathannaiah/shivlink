@@ -194,9 +194,9 @@ const Contact = () => {
                     <p className="text-gray-600 dark:text-gray-300">
                       <a href="tel:+18669691862" className="hover:underline">+1 866.969.1862</a><br />
                       <a href="tel:+18449007448" className="hover:underline">+1 844-900-SHIV</a><br />
-                      <a href="mailto:infoshivlink@gmail.com" className="hover:underline">Email: infoshivlink@gmail.com</a><br />
-                      <a href="mailto:hrshivlink@gmail.com" className="hover:underline">Apply jobs: hrshivlink@gmail.com</a><br />
-                      <a href="mailto:sales.shivlink@gmail.com" className="hover:underline">Sales: sales.shivlink@gmail.com</a><br />
+                      <a href="mailto:info@shivlinks.com" className="hover:underline">Email: info@shivlinks.com</a><br />
+                      <a href="mailto:hr@shivlinks.com" className="hover:underline">Apply jobs: hr@shivlinks.com</a><br />
+                      <a href="mailto:sales@shivlinks.com" className="hover:underline">Sales: sales@shivlinks.com</a><br />
                       <a href="https://wa.me/17784444411" className="hover:underline"><MessageCircle className="inline h-5 w-5" /> WhatsApp</a><br />
                       <a href="https://www.instagram.com/shivlink_solutions/" className="hover:underline"><Instagram className="inline h-5 w-5" /> Instagram</a><br />
                       <a href="https://www.facebook.com/p/ShivLink-Solutions-61573008633113/" className="hover:underline"><Facebook className="inline h-5 w-5" /> Facebook</a>

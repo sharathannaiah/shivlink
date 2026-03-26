@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -89,4 +93,112 @@
 
 .fade-in-up {
   animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes partnerMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partner-marquee {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: partnerMarquee 26s linear infinite;
+}
+
+.partner-logo-item {
+  min-width: 8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 9999px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+.partner-logo-item:hover {
+  color: rgba(255, 255, 255, 0.95);
+  filter: grayscale(0);
+  border-color: rgba(96, 165, 250, 0.7);
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(14px);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.65);
+}
+
+.how-line {
+  animation: linePulse 2.2s ease-in-out infinite;
+}
+
+@keyframes linePulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Rainbow border buttons (lightweight: pure CSS pseudo elements) */
+@keyframes rainbow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.rainbow-border {
+  position: relative;
+  isolation: isolate;
+  background: #0f172a;
+  border-radius: 12px;
+}
+
+.rainbow-border::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    #3b82f6,
+    #60a5fa,
+    #93c5fd,
+    #3b82f6,
+    #60a5fa,
+    #93c5fd
+  );
+  background-size: 300%;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  z-index: -1;
+  animation: rainbow 30s linear infinite;
+  opacity: 0.8;
 }
