@@ -492,16 +492,16 @@ const ShivlinkSolutions = () => {
                 We are more than just a marketing company! With over a decade of experience, the team of experts at Shivlink solutions aims to combine creativity, technology, and integrated marketing solutions to provide businesses with a competitive edge.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+              <div className="grid grid-cols-1 gap-8 mb-10">
                 <div className="flex flex-col items-center">
-                  <img
+                  {/* <img
                     src="/IC.png"
                     alt="Shivlink Solutions Integrated Creativity"
                     className="w-full max-w-md rounded-2xl shadow-lg"
-                  />
-                  <p className="mt-4 text-sm text-slate-400 text-center">
+                  /> */}
+                  {/* <p className="mt-4 text-sm text-slate-400 text-center">
                     Integrated Creativity & Technology
-                  </p>
+                  </p> */}
                 </div>
                 <div className="flex flex-col items-center">
                   <img
@@ -684,6 +684,65 @@ const ShivlinkSolutions = () => {
                     Send Message
                   </button>
                 </form>
+
+                <div className="mt-8 border-t border-white/10 pt-6">
+                  <h3 className="mb-4 text-lg font-semibold text-white">Contact Information</h3>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <p className="mb-1 text-xs font-medium uppercase tracking-wider text-blue-300">Phone</p>
+                      <div className="space-y-1 text-sm">
+                        <a href="tel:+17784444411" className="block text-slate-300 hover:text-white">
+                          +1 778 444 4411
+                        </a>
+                        <a href="tel:+18449007448" className="block text-slate-300 hover:text-white">
+                          +1 844-900-SHIV
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs font-medium uppercase tracking-wider text-blue-300">Email</p>
+                      <div className="space-y-1 text-sm">
+                        <a href="mailto:info@shivlinks.com" className="block text-slate-300 hover:text-white">
+                          info@shivlinks.com
+                        </a>
+                        <a href="mailto:hr@shivlinks.com" className="block text-slate-300 hover:text-white">
+                          hr@shivlinks.com
+                        </a>
+                        <a href="mailto:sales@shivlinks.com" className="block text-slate-300 hover:text-white">
+                          sales@shivlinks.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 flex items-center gap-5 text-slate-300">
+                    <a href="https://wa.me/17784444411" target="_blank" rel="noreferrer">
+                      <MessageCircle className="h-6 w-6" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/shivlink_solutions/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Instagram className="h-6 w-6" />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/p/ShivLink-Solutions-61573008633113/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Facebook className="h-6 w-6" />
+                    </a>
+                  </div>
+
+                  <div className="mt-6 flex justify-center">
+                    <img
+                      src="/shivlink-logo.png"
+                      alt="Shivlink Solutions"
+                      className="h-48 w-48 rounded-full opacity-80"
+                    />
+                  </div>
+                </div>
               </motion.div>
 
               <motion.div
@@ -694,76 +753,11 @@ const ShivlinkSolutions = () => {
                 className="space-y-6"
               >
                 <div className="rounded-xl border border-white/10 bg-slate-900/70 p-6">
-                  <h3 className="mb-5 text-xl font-semibold text-white">Contact Information</h3>
-                  <div className="space-y-5 text-slate-300">
-                    <div className="flex items-start gap-3">
-                      <Phone className="mt-1 h-5 w-5 text-blue-300" />
-                      <div>
-                        <a href="tel:+18669691862" className="block hover:text-white">
-                          +1 866.969.1862
-                        </a>
-                        <a href="tel:+18449007448" className="block hover:text-white">
-                          +1 844-900-SHIV
-                        </a>
-                        <a href="mailto:info@shivlinks.com" className="block hover:text-white">
-                          info@shivlinks.com
-                        </a>
-                        <a href="mailto:hr@shivlinks.com" className="block hover:text-white">
-                          hr@shivlinks.com
-                        </a>
-                        <a href="mailto:sales@shivlinks.com" className="block hover:text-white">
-                          sales@shivlinks.com
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <MapPin className="mt-1 h-5 w-5 text-blue-300" />
-                      <a
-                        href="https://www.google.com/maps/place/6350+120+St,+Surrey,+BC"
-                        className="hover:text-white"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        #119-6350 120st
-                        <br />
-                        Surrey, BC V3X 3K1
-                        <br />
-                        Canada
-                      </a>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <Clock className="mt-1 h-5 w-5 text-blue-300" />
-                      <p>
-                        Monday - Friday: 9:00 AM - 8:00 PM
-                        <br />
-                        Saturday: 10:00 AM - 6:00 PM
-                        <br />
-                        Sunday: 11:00 AM - 5:00 PM
-                      </p>
-                    </div>
-
-                    <div className="flex items-center gap-4 pt-2 text-slate-300">
-                      <a href="https://wa.me/17784444411" target="_blank" rel="noreferrer">
-                        <MessageCircle className="h-5 w-5" />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/shivlink_solutions/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Instagram className="h-5 w-5" />
-                      </a>
-                      <a
-                        href="https://www.facebook.com/p/ShivLink-Solutions-61573008633113/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Facebook className="h-5 w-5" />
-                      </a>
-                    </div>
-                  </div>
+                  <img
+                    src="/contact-card.jpg"
+                    alt="Contact Information"
+                    className="w-full rounded-lg object-contain shadow-lg"
+                  />
                 </div>
               </motion.div>
             </div>
